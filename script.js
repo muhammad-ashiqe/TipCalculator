@@ -18,7 +18,6 @@ calculateTipButton.addEventListener("click", () => {
 
   const tipAmount = billAmount * tipPercentage;
   const totalBill = billAmount + tipAmount;
-
   tipAmountDisplay.innerHTML = `Tip Amount:  ₹<span>${tipAmount.toFixed(2)}</span>`;
   totalBillDisplay.innerHTML = `Total Bill:  ₹<span>${totalBill.toFixed(2)}</span>`;
 
@@ -26,4 +25,7 @@ calculateTipButton.addEventListener("click", () => {
 });
 
 
-
+const clearValue =()=>{
+  billAmountInput.value = "";
+  resultDiv.style.display = "none";
+}
